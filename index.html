@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaktik Kino - Əsas Səhifə</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+    <!-- Floating background elements -->
+    <div class="floating-element float-1"></div>
+    <div class="floating-element float-2"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">GALAKTIK KINO</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Əsas</a></li>
+                    <li><a href="films.html">Filmlər</a></li>
+                    <li><a href="schedule.html">Nümayişlər</a></li>
+                    <li><a href="about.html">Haqqımızda</a></li>
+                    <li><a href="ticket.html">Bilet Al</a></li>
+
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="auth-btn login-btn">Daxil ol</button>
+                <button class="auth-btn register-btn">Qeydiyyat</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Gələcəyin Kino Təcrübəsi</h1>
+                    <p>Özünüzü fantastik dünyalara aparın. 8K proyeksiya, Dolby Atmos səs və kosmik rahatlıqda
+                        oturacaqlar sizi gözləyir.</p>
+                    <button onclick="location.href='/ticket.html'" class="cta-btn">
+                        <span>Bilet Al</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                </div>
+                <img src="/assets/images/hq720.jpg" alt="Kino" class="hero-image">
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="containerF">
+                <h2 class="section-title">Xüsusi Təkliflər</h2>
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <img src="/assets/images/Star-wars.jpg" alt="Star Wars"
+                            class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Star Wars: Yeni Ümid</h3>
+                            <div class="movie-meta">
+                                <span>Fantastik</span>
+                                <span>2h 15m</span>
+                                <span class="movie-rating">⭐ 9.2</span>
+                            </div>
+                            <p class="movie-desc">Uzaq, uzaq qalaktikada baş verən epik döyüşlər və macəralar...</p>
+                            <button onclick="location.href='/ticket.html'" class="book-btn">Bilet Al</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="/assets/images/Avatar-2-1.png" alt="Avatar" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Avatar: Suyun Yolu</h3>
+                            <div class="movie-meta">
+                                <span>Fantastik</span>
+                                <span>3h 12m</span>
+                                <span class="movie-rating">⭐ 8.8</span>
+                            </div>
+                            <p class="movie-desc">Pandora planetində yeni macəralar və gözəl görüntülər...</p>
+                            <button onclick="location.href='/ticket.html'" class="book-btn">Bilet Al</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="/assets/images/dune2.jpg" alt="Dune" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Dune: II Hissə</h3>
+                            <div class="movie-meta">
+                                <span>Fantastik</span>
+                                <span>2h 46m</span>
+                                <span class="movie-rating">⭐ 9.1</span>
+                            </div>
+                            <p class="movie-desc">Arrakis planetində güc uğrunda mübarizə davam edir...</p>
+                            <button onclick="location.href='/ticket.html'" class="book-btn">Bilet Al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
