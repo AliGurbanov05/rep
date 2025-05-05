@@ -1,0 +1,67 @@
+.product {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 0;
+    background-image: url("../../../images/body-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    .txt {
+        width: 71%;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+        flex-direction: column;
+
+        p {
+            color: rgb(119, 119, 119);
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px
+        }
+
+        h1 {
+            color: rgb(34, 34, 34);
+            font-family: "Oswald", sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 39.6px;
+             span {
+                border-bottom: 2px solid rgb(56, 74, 235);
+            }
+        }
+    }
+
+    .cards {
+        width: 81%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
+
+    }
+
+    @media (max-width: 768px) {
+        .cards {
+            .card {
+                width: 90%;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .cards {
+            .card {
+                width: 45%;
+            }
+        }
+    }
+}

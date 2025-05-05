@@ -1,0 +1,137 @@
+.header {
+    top: 0;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+
+    .container {
+        width: 66%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        min-height: 60px;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav {
+            ul {
+                gap: 30px;
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                li {
+                    a {
+                        color: rgb(34, 34, 34);
+                        font-family: "Roboto", sans-serif;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .icons {
+            gap: 15px;
+            display: flex;
+            font-size: 20px;
+            color: black;
+            align-items: center;
+
+            a {
+                display: flex;
+                font-size: 20px;
+                color: black;
+                align-items: center;
+            }
+        }
+
+        button {
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, 0.139);
+            text-align: center;
+            align-items: center;
+            border-radius: 15px;
+            background: transparent;
+            justify-content: center;
+            padding: 11px 30px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+
+            span {
+                height: 3px;
+                width: 25px;
+                background: blue;
+                border-radius: 5px;
+                transition: 0.3s ease;
+            }
+        }
+
+        .mobileMenu {
+            display: none;
+            flex-direction: column;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+
+            a {
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: "Raleway", sans-serif;
+
+                &:hover {
+                    color: orange;
+                }
+            }
+        }
+
+        .mobileMenuActive {
+            display: flex !important;
+        }
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    .header {
+        .container {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .header {
+        .container {
+            width: 80%;
+
+            .nav {
+                display: none;
+            }
+
+            .icons {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    }
+}
